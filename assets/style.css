@@ -178,6 +178,7 @@ nav li {
   margin: 0 auto;
   margin-bottom: 15px;
   max-width: 200px;
+  max-height: 200px;
 }
 
 .right {
