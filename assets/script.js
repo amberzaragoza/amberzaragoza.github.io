@@ -8,11 +8,9 @@ $(document).ready(function() {
   $(window).scroll(function(e) {
     if ($(window).width() > 600) {
       if ($(window).scrollTop() >= $('#about').outerHeight() - 1) {
-        console.log('black');
         $("#navbar").css('backgroundColor', 'rgba(240,255,255,0.8)');
         $(".nav-link").css('color', '#353839');
       } else {
-        console.log('white');
         $(".nav-link").css('color', '#f0ffff');
         $("#navbar").css('backgroundColor', 'transparent');
       }
