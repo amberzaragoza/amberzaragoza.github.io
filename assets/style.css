@@ -76,6 +76,25 @@ nav li {
 	display: inline-block;
 }
 
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table td {
+	padding: 25px;
+}
+
+table td .icon {
+	font-size: 50px;
+}
+
+table td .label {
+	color: var(--text);
+	font-size: 16px;
+	margin-top: 10px;
+}
+
 #about {
 	background-image:
 		url("https://www.transparenttextures.com/patterns/shattered.png"),
@@ -135,14 +154,8 @@ nav li {
 	clear: both;
 }
 
-.devicon, .fas {
+.icon, .fas {
 	color: var(--accent1);
-}
-
-.devicon {
-	font-size: 50px;
-	margin: 25px;
-	display: inline-block;
 }
 
 .fas {
@@ -234,6 +247,15 @@ nav li {
 	nav {
 		display: none;
 	}
+	table {
+		text-align: left;
+	}
+	table td, table tr {
+		display: inline-block;
+	}
+	table td {
+		padding: 5px 5px 5px 0px;
+	}
 	#about, #education, #projects, #skills {
 		height: auto;
 	}
@@ -253,14 +275,7 @@ nav li {
 	.center {
 		height: auto;
 	}
-	.devicon {
-		margin: 0;
-		margin-top: 10px !important;
-	}
-	.linebreak {
-		display: none;
-	}
-	.photo {
+	.label, .linebreak, .photo {
 		display: none;
 	}
 	.title {
