@@ -86,7 +86,16 @@ table td {
 }
 
 table td .icon {
+	color: var(--accent1);
 	font-size: 50px;
+	-webkit-transition: color ease-in-out 300ms;
+	transition: color ease-in-out 300ms;
+}
+
+table td .icon:hover {
+	color: var(--accent2);
+	-webkit-transition: color ease-in-out 300ms;
+	transition: color ease-in-out 300ms;
 }
 
 table td .label {
@@ -154,13 +163,18 @@ table td .label {
 	clear: both;
 }
 
-.icon, .fas {
+.fas {
 	color: var(--accent1);
+	font-weight: 700 !important;
+	margin-right: 5px;
+	-webkit-transition: color ease-in-out 300ms;
+	transition: color ease-in-out 300ms;
 }
 
-.fas {
-	margin-right: 5px;
-	font-weight: 700 !important;
+.fas:hover {
+	color: var(--accent2);
+	-webkit-transition: color ease-in-out 300ms;
+	transition: color ease-in-out 300ms;
 }
 
 .info {
