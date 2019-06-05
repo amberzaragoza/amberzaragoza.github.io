@@ -1,6 +1,7 @@
 :root {
 	--background: #f0ffff;
 	--header: #a8b2b2;
+	--subheader: #646a6a;
 	--text: #353839;
 	--accent1: #8ca6db;
 	--accent2: #b993d6;
@@ -251,11 +252,11 @@ table td .label {
 }
 
 .subheader {
-	color: var(--header);
+	color: var(--subheader);
 }
 
 .subline {
-	color: var(--header);
+	color: var(--subheader);
 	font-size: 12px;
 	margin: 2px 0;
 }
