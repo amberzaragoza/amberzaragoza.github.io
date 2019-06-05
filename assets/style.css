@@ -163,6 +163,11 @@ table td .label {
 	clear: both;
 }
 
+.fa-ul {
+	margin-left: 1.5em;
+	margin-right: 1em;
+}
+
 .fas {
 	color: var(--accent1);
 	font-weight: 700 !important;
