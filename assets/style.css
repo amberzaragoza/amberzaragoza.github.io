@@ -250,7 +250,12 @@ table td .label {
 	margin-right: 25px;
 }
 
+.subheader {
+	color: var(--header);
+}
+
 .subline {
+	color: var(--header);
 	font-size: 12px;
 	margin: 2px 0;
 }
