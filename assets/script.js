@@ -1,6 +1,7 @@
 $(document).ready(function() {
   var links = {
     about: $('#about').offset().top,
+    experience: $('#experience').offset().top,
     education: $('#education').offset().top,
     skills: $('#skills').offset().top,
     projects: $('#projects').offset().top
@@ -31,13 +32,17 @@ $(document).ready(function() {
 });
 
 function scrollToDiv(key, x, links) {
-  if (x < links.education) {
+  if (x < links.experience) {
     $('html, body').animate({
-      scrollTop: (key == 38) ? links.projects : links.education
+      scrollTop: (key == 38) ? links.projects : links.experience
+    }, 500);
+  } else if (x < links.education) {
+    $('html, body').animate({
+      scrollTop: (key == 38) ? links.about : links.education
     }, 500);
   } else if (x < links.skills) {
     $('html, body').animate({
-      scrollTop: (key == 38) ? links.about : links.skills
+      scrollTop: (key == 38) ? links.experience : links.skills
     }, 500);
   } else if (x < links.projects) {
     $('html, body').animate({
