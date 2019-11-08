@@ -128,6 +128,7 @@ table td .label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   height: 100vh;
 }
 
@@ -211,13 +212,27 @@ table td .label {
   float: left;
 }
 
+.csub {
+  background-image: url("./images/csub.jpg");
+}
+
+.grad {
+  background-image: url("./images/graduation-caps.jpg");
+}
+
+.group {
+  background-image: url("./images/group.jpg");
+}
+
 .photo {
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
   align-content: center;
-  max-width: 70%;
+  flex-basis: 100%;
 }
 
 .profile {
