@@ -21,22 +21,26 @@ a {
 body {
   background-color: var(--background);
   color: var(--text);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 125%;
   width: 100%;
 }
 
-h2, h3, header {
+h2,
+h3,
+header {
   font-weight: 700;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 17px;
 }
 
-h2:not(:first-child), h3 {
+h2:not(:first-child),
+h3 {
   margin-top: 15px;
 }
 
@@ -109,22 +113,20 @@ table td .label {
 }
 
 #about {
-  background-image:
-  url("./images/shattered.png"),
-  -webkit-gradient(linear, left top, left bottom, from(var(--accent2)), to(var(--accent1)));
-  background-image:
-  url("./images/shattered.png"),
-  -o-linear-gradient(var(--accent2), var(--accent1));
-  background-image:
-  url("./images/shattered.png"),
-  linear-gradient(var(--accent2), var(--accent1));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--accent2)), to(var(--accent1)));
+  background-image: -o-linear-gradient(var(--accent2), var(--accent1));
+  background-image: linear-gradient(var(--accent2), var(--accent1));
   color: #f0ffff;
   font-weight: 400;
   padding: 25px;
   text-align: center;
 }
 
-#experience, #education, #projects, #skills, .center {
+#experience,
+#education,
+#projects,
+#skills,
+.center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +134,9 @@ table td .label {
   height: 100vh;
 }
 
-#experience, #education, #projects {
+#experience,
+#education,
+#projects {
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
@@ -148,7 +152,8 @@ table td .label {
   margin-left: 3px;
 }
 
-#skills, .center {
+#skills,
+.center {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
@@ -236,7 +241,7 @@ table td .label {
 }
 
 .profile {
-  border: 10px solid rgba(255,255,255,0.5);
+  border: 10px solid rgba(255, 255, 255, 0.5);
   border-radius: 100%;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -257,7 +262,7 @@ table td .label {
 }
 
 .contact-links a {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   display: inline-block;
   font-size: 30px;
   padding: 10px;
@@ -291,18 +296,36 @@ table td .label {
     display: none;
   }
   table {
-    text-align: left;
+    width: 100%;
   }
-  table td, table tr {
+  table td,
+  table tr {
     display: inline-block;
   }
   table td {
+    padding: 5px 5px 0px;
+  }
+  table td:first-of-type {
+    padding-left: 0px;
+  }
+  table td:last-of-type {
+    padding-right: 0px;
+  }
+  /*
+  table td {
     padding: 5px 5px 5px 0px;
   }
-  #about, #experience, #education, #projects, #skills {
+  */
+  #about,
+  #experience,
+  #education,
+  #projects,
+  #skills {
     height: auto;
   }
-  #experience, #education, #projects {
+  #experience,
+  #education,
+  #projects {
     padding: 25px 0;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
@@ -315,10 +338,16 @@ table td .label {
     -ms-flex-align: flex-start;
     align-items: flex-start;
   }
+  .info {
+    max-width: 100%;
+    width: 100%;
+  }
   .center {
     height: auto;
   }
-  .label, .linebreak, .photo {
+  .label,
+  .linebreak,
+  .photo {
     display: none;
   }
   .title {
@@ -326,4 +355,3 @@ table td .label {
     margin-bottom: 15px;
   }
 }
-
